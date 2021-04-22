@@ -7,9 +7,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - name: "8080"
-      port: 8080
-      targetPort: 8080
-      nodePort: 32201
+    - name: "springboot"
+      port: 5400
+      targetPort: 5400
   selector:
-    service: k8s-demo-app
+    app: k8s-demo-app

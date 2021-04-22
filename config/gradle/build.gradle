@@ -7,7 +7,7 @@ bootJar {
 }
 
 bootBuildImage {
-    imageName = "abahrami.com/library/springwebtemplate:${project.version}" // TODO - rename image name
+    imageName = "amirbahrami67/k8s-demo:latest"
 }
 
 springBoot {
@@ -15,6 +15,4 @@ springBoot {
 }
 
 java {
-    withJavadocJar()
-    withSourcesJar()
 }

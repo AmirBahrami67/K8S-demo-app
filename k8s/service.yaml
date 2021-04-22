@@ -5,10 +5,11 @@ metadata:
     service: k8s-demo-svc
   name: k8s-demo-svc
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - name: "8080"
       port: 8080
       targetPort: 8080
+      nodePort: 32201
   selector:
     service: k8s-demo-app

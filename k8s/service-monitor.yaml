@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: k8s-demo-app-sm
+spec:
+  selector:
+    matchLabels:
+      app: k8s-demo-app
+    endpoints:
+      - port: spring
+        interval: 3s
+        path: "/actuator/prometheus"

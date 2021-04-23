@@ -7,6 +7,6 @@ spec:
     matchLabels:
       app: k8s-demo-app
   endpoints:
-    - port: spring
-      interval: 3s
-      path: "/actuator/prometheus"
+  - port: spring
+    interval: 3s
+    path: "/actuator/prometheus"
